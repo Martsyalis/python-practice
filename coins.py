@@ -37,6 +37,19 @@ class Coin:
         print('Coin Spent!')
 
 
+class one_pence(Coin):
+    def __init__(self):
+        data = {
+            "original_value": 1.00,
+            "clean_colour": "gold",
+            "rusty_colour":  "greenish",
+            "num_edges": 1,
+            "diameter": 22.5,
+            "thickness": 3.15,
+            "mass": 9.5
+        }
+        super().__init__(**data)
+
 class Pound(Coin):
     def __init__(self):
         data = {
@@ -49,6 +62,8 @@ class Pound(Coin):
             "mass": 9.5
         }
         super().__init__(**data)
+
+
 
 
 one_pound_coin = Pound()
